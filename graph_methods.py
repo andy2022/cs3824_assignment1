@@ -3,11 +3,31 @@
 
 import networkx
 
+def add_nodes(mygraph, fname):
+    '''
+    Reads the specified nodes text file and adds all nodes to the specified graph.
+        mygraph: Graph to which nodes will be added (MultiDiGraph)
+        fname: Input file to read
+    '''
+    f = open(fname, "r")
+    firstline = f.readline()
+    assert(firstline[:5] == "#node") # Check that correct table is being read
+
+    for line in f:
+        arr = line.split()
+        assert(len(arr) == 3) # For node files, only 3 columns present
+
+        # Create and add node - use arr values
+        mygraph.add_node(arr[0], node_type = arr[1])
+
+    f.close()
+
+
 def add_edges(mygraph, fname):
     '''
     Reads the specified edges text file and adds all edges to the specified graph.
-    mygraph: Graph to which edges will be added (MultiDiGraph)
-    fname: Input file to read
+        mygraph: Graph to which edges will be added (MultiDiGraph)
+        fname: Input file to read
     '''
     f = open(fname, "r")
     firstline = f.readline() # Read first line
