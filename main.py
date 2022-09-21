@@ -5,6 +5,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 from graph_methods import *
+from parsing import parse
 
 # Part 1 - construct 4 graphs
 egfr = nx.MultiDiGraph()
@@ -21,4 +22,10 @@ add_edges(tnf_alpha, "NetPath-pathways/TNFalpha-edges.txt")
 add_nodes(wnt, "NetPath-pathways/Wnt-nodes.txt")
 add_edges(wnt, "NetPath-pathways/Wnt-edges.txt")
 
-print(wnt.nodes.data())
+# Part 2 - parsing ranked edges
+egfr_rankededges = parse("PathLinker-results/EGFR1-k_20000-ranked-edges.txt")
+tgf_beta_rankededges = parse("PathLinker-results/TGF_beta_Receptor-k_20000-ranked-edges.txt")
+tnf_alpha_rankededges = parse("PathLinker-results/TNFalpha-k_20000-ranked-edges.txt")
+wnt_rankededges = parse("PathLinker-results/Wnt-k_20000-ranked-edges.txt")
+
+# Part 3 - precision-recall curves
