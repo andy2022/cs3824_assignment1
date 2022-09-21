@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 
 from graph_methods import *
 from parsing import parse
+from precision_recall import func
 
 # Part 1 - construct 4 graphs
 egfr = nx.MultiDiGraph()
@@ -29,3 +30,5 @@ tnf_alpha_rankededges = parse("PathLinker-results/TNFalpha-k_20000-ranked-edges.
 wnt_rankededges = parse("PathLinker-results/Wnt-k_20000-ranked-edges.txt")
 
 # Part 3 - precision-recall curves
+precision, recall = func(egfr_rankededges, egfr)
+print("S")
