@@ -407,14 +407,14 @@ Q08999	Q14186	1	TGF_beta_Receptor	7	physical	RBL2	TFDP1
 P62877	P84022	1	TGF_beta_Receptor	7	Ubiquitination	RBX1	SMAD3
 P62877	P84022	1	TGF_beta_Receptor	7	physical	RBX1	SMAD3
 P61586	Q03135	1	TGF_beta_Receptor	7	physical	RHOA	CAV1
--	P12755	1	TGF_beta_Receptor	7	physical	RNF111	SKI
--	P12755	1	TGF_beta_Receptor	7	Ubiquitination	RNF111	SKI
--	P12757	1	TGF_beta_Receptor	7	Ubiquitination	RNF111	SKIL
--	P12757	1	TGF_beta_Receptor	7	physical	RNF111	SKIL
--	Q15796	1	TGF_beta_Receptor	7	physical	RNF111	SMAD2
--	Q13485	1	TGF_beta_Receptor	7	physical	RNF111	SMAD4
--	O15105	1	TGF_beta_Receptor	7	Ubiquitination	RNF111	SMAD7
--	O15105	1	TGF_beta_Receptor	7	physical	RNF111	SMAD7
+RNF111	P12755	1	TGF_beta_Receptor	7	physical	RNF111	SKI
+RNF111	P12757	1	TGF_beta_Receptor	7	Ubiquitination	RNF111	SKIL
+RNF111	P12757	1	TGF_beta_Receptor	7	physical	RNF111	SKIL
+RNF111	P12755	1	TGF_beta_Receptor	7	Ubiquitination	RNF111	SKI
+RNF111	Q15796	1	TGF_beta_Receptor	7	physical	RNF111	SMAD2
+RNF111	Q13485	1	TGF_beta_Receptor	7	physical	RNF111	SMAD4
+RNF111	O15105	1	TGF_beta_Receptor	7	Ubiquitination	RNF111	SMAD7
+RNF111	O15105	1	TGF_beta_Receptor	7	physical	RNF111	SMAD7
 Q13464	P30304	1	TGF_beta_Receptor	7	physical	ROCK1	CDC25A
 Q13464	P30304	1	TGF_beta_Receptor	7	Phosphorylation	ROCK1	CDC25A
 Q01196	P84022	1	TGF_beta_Receptor	7	physical	RUNX1	SMAD3
@@ -435,7 +435,7 @@ P29353	P37173	1	TGF_beta_Receptor	7	physical	SHC1	TGFBR2
 P57059	O15105	1	TGF_beta_Receptor	7	physical	SIK1	SMAD7
 P57059	P36897	1	TGF_beta_Receptor	7	physical	SIK1	TGFBR1
 P12755	Q09472	1	TGF_beta_Receptor	7	physical	SKI	EP300
-P12755	-	1	TGF_beta_Receptor	7	physical	SKI	RNF111
+P12755	RNF111	1	TGF_beta_Receptor	7	physical	SKI	RNF111
 P12755	P12757	1	TGF_beta_Receptor	7	physical	SKI	SKIL
 P12755	Q15796	1	TGF_beta_Receptor	7	physical	SKI	SMAD2
 P12755	P84022	1	TGF_beta_Receptor	7	physical	SKI	SMAD3
@@ -446,7 +446,7 @@ P12757	Q09472	1	TGF_beta_Receptor	7	physical	SKIL	EP300
 P12757	Q9UM11	1	TGF_beta_Receptor	7	physical	SKIL	FZR1
 P12757	Q9H160	1	TGF_beta_Receptor	7	physical	SKIL	ING2
 P12757	Q96PU5	1	TGF_beta_Receptor	7	physical	SKIL	NEDD4L
-P12757	-	1	TGF_beta_Receptor	7	physical	SKIL	RNF111
+P12757	RNF111	1	TGF_beta_Receptor	7	physical	SKIL	RNF111
 P12757	P12755	1	TGF_beta_Receptor	7	physical	SKIL	SKI
 P12757	Q15796	1	TGF_beta_Receptor	7	physical	SKIL	SMAD2
 P12757	P84022	1	TGF_beta_Receptor	7	physical	SKIL	SMAD3
@@ -483,7 +483,7 @@ Q15796	Q8TEW0	1	TGF_beta_Receptor	7	physical	SMAD2	PARD3
 Q15796	O15530	1	TGF_beta_Receptor	7	physical	SMAD2	PDPK1
 Q15796	P29590	1	TGF_beta_Receptor	7	physical	SMAD2	PML
 Q15796	P35813	1	TGF_beta_Receptor	7	physical	SMAD2	PPM1A
-Q15796	-	1	TGF_beta_Receptor	7	physical	SMAD2	RNF111
+Q15796	RNF111	1	TGF_beta_Receptor	7	physical	SMAD2	RNF111
 Q15796	Q13950	1	TGF_beta_Receptor	7	physical	SMAD2	RUNX2
 Q15796	P12755	1	TGF_beta_Receptor	7	physical	SMAD2	SKI
 Q15796	P12757	1	TGF_beta_Receptor	7	physical	SMAD2	SKIL
@@ -617,7 +617,7 @@ Q13485	O15530	1	TGF_beta_Receptor	7	physical	SMAD4	PDPK1
 Q13485	P31321	1	TGF_beta_Receptor	7	physical	SMAD4	PRKAR1B
 Q13485	P13861	1	TGF_beta_Receptor	7	physical	SMAD4	PRKAR2A
 Q13485	P28749	1	TGF_beta_Receptor	7	physical	SMAD4	RBL1
-Q13485	-	1	TGF_beta_Receptor	7	physical	SMAD4	RNF111
+Q13485	RNF111	1	TGF_beta_Receptor	7	physical	SMAD4	RNF111
 Q13485	Q13950	1	TGF_beta_Receptor	7	physical	SMAD4	RUNX2
 Q13485	Q13761	1	TGF_beta_Receptor	7	physical	SMAD4	RUNX3
 Q13485	Q8N6K7	1	TGF_beta_Receptor	7	physical	SMAD4	SAMD3
@@ -656,7 +656,7 @@ O15105	Q8TEW0	1	TGF_beta_Receptor	7	physical	SMAD7	PARD3
 O15105	O15530	1	TGF_beta_Receptor	7	physical	SMAD7	PDPK1
 O15105	P36873	1	TGF_beta_Receptor	7	physical	SMAD7	PPP1CC
 O15105	O75807	1	TGF_beta_Receptor	7	physical	SMAD7	PPP1R15A
-O15105	-	1	TGF_beta_Receptor	7	physical	SMAD7	RNF111
+O15105	RNF111	1	TGF_beta_Receptor	7	physical	SMAD7	RNF111
 O15105	P57059	1	TGF_beta_Receptor	7	physical	SMAD7	SIK1
 O15105	Q9HCE7	1	TGF_beta_Receptor	7	physical	SMAD7	SMURF1
 O15105	Q9HAU4	1	TGF_beta_Receptor	7	physical	SMAD7	SMURF2
