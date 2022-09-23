@@ -31,7 +31,6 @@ tgf_beta_rankededges = parse("PathLinker-results/TGF_beta_Receptor-k_20000-ranke
 tnf_alpha_rankededges = parse("PathLinker-results/TNFalpha-k_20000-ranked-edges.txt")
 wnt_rankededges = parse("PathLinker-results/Wnt-k_20000-ranked-edges.txt")
 
-'''
 # Part 3 - precision-recall curves
 egfr_precision, egfr_recall = generate(egfr_rankededges, egfr)
 tgf_precision, tgf_recall = generate(tgf_beta_rankededges, tgf_beta)
@@ -66,7 +65,7 @@ plt.xlabel("Recall")
 plt.ylabel("Precision")
 plt.savefig("shortest.png")
 plt.clf()
-'''
+
 
 # Part 5 - RWR algorithm
 rwr(egfr)
